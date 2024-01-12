@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.conteiner {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, rgb(238, 100, 100), rgb(108, 134, 206));
+    padding: 10px;
+}
+
+.cabeca {
+    /*width: 350px;
+    height: 60px;
+    padding: 10px;
+    gap: 5px;
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto 20px;
+    padding: 20px 30px 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 35px;
+    background: #edeef0;
+    border-radius: 14px;
+    padding-left: 20px;
+}
+
+#input {
+    width: 70%;
+    background: transparent;
+    font-weight: 14px;
+    font-size: 12px;
+    outline: none;
+    border: none;
+}
+
+#botao-enviar {
+    width: 30%;
+    border-radius: 14px;
+    border-style: solid;
+    cursor: pointer;
+    border-color: rgb(104, 96, 212);
+    background-color: rgb(104, 96, 212);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.cabeca ul {
+    padding-top: 30px;
+}
+
+.cabeca ul li{
+    padding: 5px 40px 10px;
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.cabeca ul li::before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(unchecked2.svg);
+    background-size: cover;
+    background-position: center;
+    top: 9px;
+    left: 12px;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(checked.svg);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover {
+    background: #edeef0;
+    border-radius: 50%;
+}
